@@ -1,0 +1,19 @@
+defaults: &defaults
+  Facebook:
+    APP_ID: 786652548039008
+    APP_SECRET: e11eb93150791b257262fabc7c48cb6d
+  Braintree:
+    MERCHANT_ID: sjwn7rdk3cdxvhyb
+    PUBLIC_KEY: 9mk23qpkwt8rmjxj
+    PRIVATE_KEY: 72fff88951b9fc3752eca753a43b473c
+
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+
+production:
+  <<: *defaults
+
