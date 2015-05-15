@@ -77,9 +77,4 @@ Rails.application.configure do
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
 
-  Braintree::Configuration.environment = :production
-  Braintree::Configuration.merchant_id = Settings.Braintree.MERCHANT_ID
-  Braintree::Configuration.public_key  = Settings.Braintree.PUBLIC_KEY
-  Braintree::Configuration.private_key = Settings.Braintree.PRIVATE_KEY
-
 end
