@@ -13,10 +13,10 @@ After that click your account on the upper right corner,
 then you will found that "後台管理系統" bottom show up.
 
 ## How to run
-step1: git clone git@github.com:evanchawu/Barbrothers-Shopping-Cart.git
-step2: bundle
-step3: rake db:migrate
-step4: go to http://localhost:3000/
+* step1: git clone git@github.com:evanchawu/Barbrothers-Shopping-Cart.git
+* step2: bundle
+* step3: rake db:migrate
+* step4: go to http://localhost:3000/
 
 ## Version
 Rails 4.2.1
