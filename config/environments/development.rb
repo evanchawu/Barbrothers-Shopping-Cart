@@ -41,17 +41,12 @@ Rails.application.configure do
 end
 
 
-if Rails.env.production?
-  Braintree::Configuration.environment = :production
-  Braintree::Configuration.merchant_id = ENV["Settings.Braintree.MERCHANT_ID"]
-  Braintree::Configuration.public_key  = ENV["Settings.Braintree.PUBLIC_KEY"]
-  Braintree::Configuration.private_key = ENV["Settings.Braintree.PRIVATE_KEY"]
-else
+
   Braintree::Configuration.environment = :sandbox
   Braintree::Configuration.merchant_id = Settings.Braintree.MERCHANT_ID
   Braintree::Configuration.public_key = Settings.Braintree.PUBLIC_KEY
   Braintree::Configuration.private_key = Settings.Braintree.PRIVATE_KEY
-end
+
 
 
 
