@@ -13,7 +13,7 @@
 <% @products.each do |product| %>
     <tr>
       <td><%= link_to product.name, product %></td>
-      <td><%= image_tag product.image.small %></td>
+      <td class="upload-image"><%= image_tag product.image, size: "100x100" %></td>
       <td><%= number_to_currency(product.price, precision:0) %></td>
     </tr>
 <% end %>
